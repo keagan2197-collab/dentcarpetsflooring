@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dent Carpets and Flooring</title>
+    <script>
+      window.global = window;
+      (function() {
+        var originalFetch = window.fetch;
+        try {
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return originalFetch; },
+            set: function() { 
+              console.warn('Something tried to set window.fetch - assignment ignored to prevent TypeError.');
+            },
+            configurable: true
+          });
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="roomvo-visualize" style="display: none;"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script
+      async
+      id="roomvoAssistant"
+      type="text/javascript"
+      data-locale="en-za"
+      data-position="bottom-left"
+      src="https://www.roomvo.com/static/scripts/b2b/common/assistant.js"
+    ></script>
+  </body>
+</html>
+
