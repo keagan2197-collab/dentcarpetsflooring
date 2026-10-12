@@ -7,6 +7,7 @@ import Home from '@/src/views/Home';
 import Products from '@/src/views/Products';
 import Brands from '@/src/views/Brands';
 import Projects from '@/src/views/Projects';
+import Videos from '@/src/views/Videos';
 import CategoryDetail from '@/src/views/CategoryDetail';
 import ProductDetail from '@/src/views/ProductDetail';
 import Contact from '@/src/views/Contact';
@@ -50,6 +51,8 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/process" element={<Process />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/videos" element={<Videos />} />
+          <Route path="/videos" element={<Videos />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products/:id" element={<CategoryDetail />} />
