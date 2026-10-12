@@ -10,6 +10,7 @@ const navItems = [
   { name: 'Flooring Options', path: '/products' },
   { name: 'Our Process', path: '/process' },
   { name: 'Projects', path: '/projects' },
+  { name: 'Videos', path: '/projects/videos' },
   { name: 'About', path: '/about' },
   { name: 'FAQ', path: '/faq' },
   { name: 'Contact Us', path: '/contact' },
